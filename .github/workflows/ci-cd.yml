@@ -8,7 +8,7 @@ on:
 
 # 워크플로우에서 변수선언
 env:
-  PROJECT_NAME: ezenshop   # 프로젝트이름
+  PROJECT_NAME: ezenshop   # 프로젝트이름(임의적)
   AWS_REGION: ap-northeast-2   # 리전: 아시아/태평양 서울
   AWS_S3_BUCKET: doc-sprinboot-bucket
   AWS_CODE_DEPLOY_APPLICATION: doc-springboot-webservice
