@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # start.sh
 
+
+# 변수선언
 PROJECT="ezenshop-1.0.0"
 PROJECT_NAME=ezenshop
 PROJECT_FULL_PATH="/home/ec2-user/app2/step1"
@@ -51,7 +53,7 @@ fi
 
 # ec2 80 port 는 sudo권한사용
 # 스프링 부트 프로젝트 java -jar ezenshop-1.0.0.jar 실행
-sudo nohup java -jar -Dspring.config.location=classpath:/application.properties,/home/ec2-user/app1/application-real.properties $JAR_FILE > $APP_LOG 2> $ERROR_LOG &
+sudo nohup java -jar -Dspring.config.location=classpath:/application.properties,/home/ec2-user/app2/application-real.properties $JAR_FILE > $APP_LOG 2> $ERROR_LOG &
 
 sleep 30s
 
